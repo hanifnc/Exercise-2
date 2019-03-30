@@ -1,0 +1,147 @@
+<!DOCTYPE html> <head> </head>
+
+<body>
+  <script>
+    var tulis = "";
+    function tulis(a) {}
+  </script>
+  <style>
+    .container {
+      float: top;
+      columns: 1;
+    }
+    .coloumn {
+      background-color: black;
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 40px;
+      width: 10px;
+      border: none;
+      margin: 10px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14px;
+    }
+    .coloumn:hover {
+      background-color: blue;
+    }
+    .coloumn1 {
+      background-color: black;
+      float: left;
+      text-align: center;
+      padding: 20px;
+      width: 11px;
+      border: none;
+      margin: 10px;
+    }
+  </style>
+  <div class="container">
+    <div class="coloumn1" style="width: 340px;">
+      <input id="data" type="text" style="width: 330px; height: 35px;" />
+    </div>
+  </div>
+  <div class="container">
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=7; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      7
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=8; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      8
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=9; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      9
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+= '+'; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      +
+    </button>
+  </div>
+  <div class="container">
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=4; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      4
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+= 5; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      5
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=6; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      6
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+='-'; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      -
+    </button>
+  </div>
+  <div class="container">
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=1; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      1
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=2; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      2
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=3; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      3
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+='*'; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      *
+    </button>
+  </div>
+  <div class="container">
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+=0; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      0
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; var tuldel = tulis.slice(0, -1); document.getElementById('data').value = tuldel"
+      class="coloumn"
+    >
+      del
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; var tulint = eval(tulis); document.getElementById('data').value = tulint"
+      class="coloumn"
+    >
+      =
+    </button>
+    <button
+      onclick="var tulis = document.getElementById('data').value; tulis+='/'; document.getElementById('data').value = tulis"
+      class="coloumn"
+    >
+      /
+    </button>
+  </div>
+</body>
